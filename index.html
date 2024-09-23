@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Sevil Aktas</title>
+    <link rel="shortcut icon" href="image/WhatsApp Image 2024-09-22 at 21.39.11.jpeg" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <h1>sev.a</h1>
+        <img src="/image/logo.PNG" alt="">
         <nav id="nav-bar">
             <a href="https://github.com/sevilak" target="_blank">portfolio</a>
             <a href="aboutme.html">about me</a>
@@ -23,50 +25,71 @@
         </nav>
     </header>
     <main>
-        <div class="dark-mode">
-            <button id="darkModeToggle">Dark Mode einschalten</button>
+        <div class="main-class">
+            <h1>Hello and Welcome!</h1>
         </div>
-        <script src="script.js"></script>
+        </div>
 
-<div id="container-main">
-        <div class="text1">
-            <h2>Hey and Welcome!</h2>
-             <div class="photo-img">
+        <div class="icon-bar">
+            <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+            <a href="https://github.com/sevilak"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="/image/lap.jpeg" alt="laptop">
+                <p>Modern Website</p>
             </div>
-            <div>
-                <p>I'm Sevil, a passionate <strong>Web Developer</strong> with experience in building modern, responsive, and user-friendly websites. 
-                    <br>My focus is on creating digital solutions that are not only visually appealing but also functional and efficient. <br>With a strong foundation in both frontend and backend technologies, I strive to enhance user experiences <br>and meet business needs through creative, technical solutions. <br>
-I'm always working to expand my knowledge of modern frameworks and best practices.
- </div>
-
- <div class="container-middle">
-<div> </div>
- </div>
-
-            <div class="container">
-                <h1>Lets have a meeting!</h1>
-
-                <form id="calendarForm">
-                    <label for="date">choose a date:</label>
-                    <input type="date" id="date" name="date" required>
-
-                    <label for="message">Your message</label>
-                    <textarea id="message" name="message" placeholder="Tell me something.." required></textarea>
-
-                    <button type="submit" class="submit-btn">Submit</button>
-                </form>
-
-                <div id="output"></div>
+            <div class="column">
+                <img src="/image/html.jpeg" alt="htmlcode">
+                <p>HTML, CSS etc.</p>
             </div>
+            <div class="column">
+                <img src="/image/media.jpeg" alt="Media">
+                <p>Responsive</p>
+            </div>
+        </div>
 
 
+        <div class="second-container">
+            <div class="second-container-text">
+                <h2>Hi, my name is Sevil Aktas</h2>
+                <br>
+                <p>I am a web developer with a unique background. Before transitioning into web development, I spent 10
+                    years working as a ticketing agent at the airport, where I created and managed tickets—a process
+                    surprisingly similar to coding in its need for precision and problem-solving. Now, I use my skills
+                    to build modern and efficient websites.</p>
+                <p>When I'm not coding, I enjoy spending time at home with my two cats, and I value the flexibility of
+                    remote work. Take a look at my projects, and you'll see my passion for creating clean, user-friendly
+                    solutions. Feel free to reach out, and together we can bring your ideas to life!</p>
+            </div>
+        </div>
 
+        <div class="container-calender">
+            <h2>Lets have a meeting!</h2>
 
+            <form id="calendarForm">
+                <label for="date">choose a date:</label>
+                <input type="date" id="date" name="date" required>
 
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" placeholder="Tell me something.." required></textarea>
 
-            <footer>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <div id="output"></div>
+        </div>
+    </main>
 
-            </footer>
+    <footer>
+        <p>Copyright 2024 Design by Sevil Aktas</p>
+        <a href="index.html">Go back!</a>
+    </footer>
 
 
 </body>
