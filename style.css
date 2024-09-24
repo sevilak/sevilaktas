@@ -136,32 +136,6 @@ h2 {
   font-family: "Courier", monospace;
   font-size: 1.2rem;
   color: #555;
-  border-right: 2px solid #555;
-  white-space: nowrap;
-  overflow: hidden; /* Hide the text outside the container */
-  width: 0;
-  animation: typing 7s steps(100, end), blink-caret 0.75s forwards;
-}
-
-/* Typing effect animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* Blinking caret animation */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #555;
-  }
 }
 
 /* Portfolio Section */
