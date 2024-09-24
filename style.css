@@ -32,11 +32,13 @@ nav {
 
 .nav-links {
   list-style: none;
+  display: flex;
 }
 
 .nav-links li {
   display: inline-block;
   margin: 0 15px;
+
 }
 
 .nav-links a {
@@ -48,6 +50,7 @@ nav {
 
 .nav-links a:hover {
   color: #ff6beb;
+  zoom: 110%;
 }
 
 /* Header Styles */
@@ -69,13 +72,13 @@ header {
   background-color: rgba(0, 0, 0, 0.178);
   padding: 100px;
   border-radius: 20px;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
 }
 
 .header-container h1 {
   font-size: 5rem;
   margin-bottom: 20px;
-  animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 4s ease-in-out;
 }
 
 .header-container p {
@@ -103,6 +106,7 @@ header {
 main {
   padding: 20px;
 }
+
 h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -112,19 +116,19 @@ h2 {
 
 #about {
   padding: 60px 20px;
-  background-color: #f4f4f4;
+  background-color: #dbdbdb;
   text-align: center;
+  border-radius: 20px;
 }
 
 #about h2 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   margin-bottom: 20px;
   color: #333;
 }
 
 .about-content {
-  max-width: 800px;
-  margin: 0 auto;
+margin: 0 auto;
   text-align: left;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -136,39 +140,29 @@ h2 {
   font-family: "Courier", monospace;
   font-size: 1.2rem;
   color: #555;
-  border-right: 2px solid #555;
-  white-space: nowrap;
-  overflow: hidden; /* Hide the text outside the container */
-  width: 0;
-  animation: typing 7s steps(100, end), blink-caret 0.75s forwards;
+  padding: 10px;
+/* margin-bottom: 20px; */
 }
 
-/* Typing effect animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+.profile-image img{
+  width: 30%;
+  float: right;
 }
 
-/* Blinking caret animation */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #555;
-  }
-}
 
 /* Portfolio Section */
+#portfolio {
+  margin-top: 60px;
+  padding: 60px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+}
 #portfolio .projects {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
 }
 
 .project {
@@ -193,7 +187,8 @@ h2 {
 
 /* Contact Section */
 #contact {
-  background-color: #d8d8d8;
+  background-color: #ffffff;
+  border: 2px solid #e2d2e2;
   color: rgb(56, 56, 56);
   text-align: center;
   display: flex;
@@ -225,6 +220,8 @@ h2 {
 #contact .btn:hover {
   color: #ffffff;
 }
+
+
 /* Calender */
 .container-calender {
   width: 30%;
