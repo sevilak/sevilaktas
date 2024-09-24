@@ -69,22 +69,24 @@ header {
 }
 
 .header-container {
-  background-color: rgba(0, 0, 0, 0.301);
-  padding: 300px;
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.178);
+  padding: 100px;
+  border-radius: 20px;
   animation: fadeIn 2s ease-in-out;
 }
 
 .header-container h1 {
   font-size: 5rem;
   margin-bottom: 20px;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
 }
 
 .header-container p {
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
+
+
 
 .header-container .btn {
   padding: 10px 30px;
@@ -103,28 +105,69 @@ header {
 
 /* Main Styles */
 
-.section {
-  padding: 60px 0;
+main {
+  padding: 20px;
 }
-
 h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
 }
+/*About Section */
 
-/* About Section */
 #about {
-  background-color: #f7f7f7;
-}
-
-.about-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 10px;
-  font-size: 1.2rem;
-  line-height: 1.8;
-}
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Typing effect */
+  .typing-effect {
+    font-family: 'Courier', monospace;
+    font-size: 1.2rem;
+    color: #555;
+    border-right: 2px solid #555;
+    white-space: nowrap;
+    overflow: hidden; /* Hide the text outside the container */
+    width: 0; 
+    animation: typing 7s steps(100, end), blink-caret 0.75s forwards;
+  }
+  
+  /* Typing effect animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Blinking caret animation */
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #555;
+    }
+  }
+  
 
 /* Portfolio Section */
 #portfolio .projects {
@@ -148,16 +191,24 @@ h2 {
   transform: translateY(-10px);
 }
 
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 /* Contact Section */
 #contact {
-  background-color: #333;
-  color: white;
+  background-color: #d8d8d8;
+  color: rgb(56, 56, 56);
   text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+border-radius: 20px;
+width: 70vw;
+height: 30vh;
+margin: 0 auto;
 }
 
 #contact p {
@@ -181,7 +232,7 @@ h2 {
 }
 /* Calender */
 .container-calender {
-    width: 60vw;
+    width: 30%;
     margin: 100px auto;
     padding: 20px;
     background-color: rgb(199, 167, 195);
@@ -310,6 +361,10 @@ footer {
     width: 80%;
   }
 
+  .container-calender {
+    width: 60%;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -339,6 +394,10 @@ footer {
 
   .project {
     width: 90%;
+  }
+
+  .container-calender {
+    width: 60%;
   }
 
   /* About Section */
